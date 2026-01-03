@@ -5,4 +5,4 @@ RUN apt install -y curl
 
 COPY . /app/
 
-CMD ["ls", *"-force"]
+CMD ["ls", "-force"]
