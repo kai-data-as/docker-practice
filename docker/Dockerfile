@@ -1,8 +1,4 @@
-FROM ubuntu:20.04
+FROM rails:5
 
-RUN apt update
-RUN apt install -y curl
-
-COPY . /app/
-
-CMD ["ls", "-force"]
+RUN touch hoge.txt
+CMD ["ls", "la"]
