@@ -1,4 +1,6 @@
-FROM rails:5
+FROM ubuntu:20.04
 
-RUN touch hoge.txt
-CMD ["ls", "la"]
+RUN apt update
+RUN apt install -y curl
+RUN apt install -y vim
+CMD ["bash"]
